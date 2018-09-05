@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Tour de Timor - Welcome</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<link rel="stylesheet" href="font-awesome.min.css" />
+		<link rel="stylesheet" href="jquery.mobile.min.css" />
+		<link rel="stylesheet" href="waves.min.css" />
+		<link rel="stylesheet" href="animate.css" />
+		<link rel="stylesheet" href="nativedroid2.css" />
+
+
+		<meta name="mobile-web-app-capable" content="yes">
+	 	<meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+	</head>
+	<body>
+
+		<div data-role="page">
+			<div data-role="panel" id="bottomsheet" data-animate="false" data-position='bottom' data-display="overlay">
+				<nd2-include data-src="bottom.sheet.html"></nd2-include>
+			</div>
+            
+
+			<nd2-include data-src="panel.left.html"></nd2-include>
+
+            <div data-role="panel" id="bottomsheetblock" class="ui-bottom-sheet" data-animate="false" data-position='bottom' data-display="overlay">
+				<nd2-include data-src="bottom.sheet.html"></nd2-include>
+			</div>
+
+			<div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s">
+				<a href="#bottomsheet" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.2s'><i class="zmdi zmdi-flash"></i></a>
+				<a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-menu"></i></a>
+				<h1 class="wow fadeIn" data-wow-delay='0.4s'>Emergency Numbers</h1>
+			</div>
+
+<!-- Main Content -->
+            <div role="main" class="ui-content wow fadeIn" data-inset="false" data-wow-delay="0.2s">
+			    
+			<ul data-role="listview" data-icon="false">
+			    
+				
+			<li>
+     <a href='tel:+67077333409'>
+      <img src='phone.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+      <h2>Medical  Emergency 24 hrs</h2>
+      <p>+67077333409</p>
+     </a>
+    </li>
+    <li>
+     <a href='tel:+67078185570'>
+      <img src='phone.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+      <h2>Race Director</h2>
+      <p>Mark Barends</p>
+	  <p>+67078185570</p>
+     </a>
+    </li>
+    <li>
+     <a href='tel:+6703324227'>
+      <img src='phone.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+      <h2>Timor Lodge Reception</h2>
+      <p>+6703324227</p>
+     </a>
+    </li>
+     <li>
+     <a href='https://wa.me/67077719992?text=Hello'>
+      <img src='whatsapp.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+      <h2>Lodge Restaurant</h2>
+      <p>+67077719992</p>
+     </a>
+    </li>
+     
+			</ul>
+
+			<hr />
+
+
+			</div>
+<!--Main Content Ends here-->
+
+
+		</div>
+
+		<script src="jquery.min.js"></script>
+		<script src="jquery-ui.min.js"></script>
+		<script src="jquery.mobile.min.js"></script>
+		<script src="waves.min.js"></script>
+		<script src="wow.min.js"></script>
+		<script src="nativedroid2.js"></script>
+		<script src="nd2settings.js"></script>
+		</body>
+</html>

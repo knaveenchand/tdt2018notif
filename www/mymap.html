@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Tour de Timor - Welcome</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<link rel="stylesheet" href="font-awesome.min.css" />
+		<link rel="stylesheet" href="jquery.mobile.min.css" />
+		<link rel="stylesheet" href="waves.min.css" />
+		<link rel="stylesheet" href="animate.css" />
+		<link rel="stylesheet" href="nativedroid2.css" />
+
+		<meta name="mobile-web-app-capable" content="yes">
+	 	<meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+	</head>
+	<body>
+
+		<div data-role="page">
+
+			<nd2-include data-src="panel.left.html"></nd2-include>
+
+			<div data-role="panel" id="bottomsheet" data-animate="false" data-position='bottom' data-display="overlay">
+				<nd2-include data-src="bottom.sheet.html"></nd2-include>
+			</div>
+            
+            <div data-role="panel" id="bottomsheetblock" class="ui-bottom-sheet" data-animate="false" data-position='bottom' data-display="overlay">
+				<nd2-include data-src="bottom.sheet.html"></nd2-include>
+			</div>
+
+			<div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s">
+				<a href="#bottomsheet" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.2s'><i class="zmdi zmdi-flash"></i></a>
+				<a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-menu"></i></a>
+				<h1 class="wow fadeIn" data-wow-delay='0.4s'>Route Map</h1>
+                 <ul data-role="nd2tabs" data-swipe="true">
+					<li data-tab="onlinemap" data-tab-active="true">Live</li>
+					<li data-tab="static" >Static</li>
+					<li data-tab="gpx" >GPX</li>
+					<li data-tab="kml" >KML</li>
+				</ul>
+			</div>
+
+<!-- Main Content -->
+            <div role="main" class="ui-content wow fadeIn" data-inset="false" data-wow-delay="0.2s">
+			
+            <div data-role="nd2tab" data-tab="onlinemap">
+    
+			<div class="nd2-card">
+
+					<iframe id="abc" src="https://www.google.com/maps/d/embed?mid=1eGCYS6d0cit3AUb5EmzaB5hnFvMmS9ie&hl=en" width="640" height="480"></iframe>
+
+				</div>
+
+
+			</div>
+                
+                <div data-role="nd2tab" data-tab="static">                    
+
+                    <div class="nd2-card">
+                        <div class="card-title">
+                        <h3 class="card-primary-title">Stage 1</h3>
+                        </div>
+                        <div class="card-media">
+                        <img src="map1.jpg"/>   
+                        </div>
+                        
+                    </div>
+                    
+
+                    <div class="nd2-card">
+                        <div class="card-title">
+                        <h3 class="card-primary-title">Stage 2</h3>
+                        </div>
+                        <div class="card-media">
+                        <img src="map2.jpg"/>   
+                        </div>
+                        
+                    </div>
+                    
+
+                    <div class="nd2-card">
+                        <div class="card-title">
+                        <h3 class="card-primary-title">Stage 3</h3>
+                        </div>
+                        <div class="card-media">
+                        <img src="map3.jpg"/>   
+                        </div>
+                        
+                    </div>
+                    
+
+                    <div class="nd2-card">
+                        <div class="card-title">
+                        <h3 class="card-primary-title">Stage 4</h3>
+                        </div>
+                        <div class="card-media">
+                        <img src="map4.jpg"/>   
+                        </div>
+                        
+                    </div>
+                    
+
+                    <div class="nd2-card">
+                        <div class="card-title">
+                        <h3 class="card-primary-title">Stage 5</h3>
+                        </div>
+                        <div class="card-media">
+                        <img src="map5.jpg"/>   
+                        </div>
+                        
+                    </div>
+                
+                </div>
+                
+                <div data-role="nd2tab" data-tab="gpx">
+                
+                <div class="nd2=card">
+                
+                    <div class="card-title">
+                    <h3 class="card-primary-title">GPX Files</h3>
+                    </div>
+<div class="card-action">
+										<iframe src="https://drive.google.com/embeddedfolderview?id=1aPBFT0VJkUkRgKT_Iw9P_AYyF-c2cQO0#grid" style="width:100%; height:600px; border:0;"></iframe>
+
+									</div>                    
+
+                    </div>
+                    
+                </div>
+
+                <div data-role="nd2tab" data-tab="kml">
+                
+                <div class="nd2=card">
+                
+                    <div class="card-title">
+                    <h3 class="card-primary-title">KML Files</h3>
+                    </div>
+<div class="card-action">
+										<iframe src="https://drive.google.com/embeddedfolderview?id=1iEpiN9T0rIHUK-u3v625tivN3UJWXyQ8#grid" style="width:100%; height:600px; border:0;"></iframe>
+
+									</div>                    
+
+                    </div>
+                    
+                </div>
+                    
+                </div>                    
+
+                
+                
+            </div>
+                
+
+<!--Main Content Ends here-->
+
+
+		</div>
+
+		<script src="jquery.min.js"></script>
+		<script src="jquery-ui.min.js"></script>
+		<script src="jquery.mobile.min.js"></script>
+		<script src="waves.min.js"></script>
+		<script src="wow.min.js"></script>
+		<script src="nativedroid2.js"></script>
+		<script src="nd2settings.js"></script>
+
+	</body>
+</html>
